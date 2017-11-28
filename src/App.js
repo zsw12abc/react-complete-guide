@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 // import Radium, {StyleRoot} from 'radium';
 import logo from "./logo.svg";
-import "./App.css";
+import classes from "./App.css";
 import Person from "./Person/Person";
 
 class App extends Component {
@@ -79,23 +79,23 @@ class App extends Component {
             // }
         }
 
-        const classes = [];
+        const assignedClasses = [];
 
         if (this.state.persons.length <= 2) {
-            classes.push('red');
+            assignedClasses.push(classes.red);
         }
         if (this.state.persons.length <= 1) {
-            classes.push('bold');
+            assignedClasses.push(classes.bold);
         }
 
         return (
             //<StyleRoot>
-            <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <h1 className="App-title">Welcome to React</h1>
+            <div className={classes.App}>
+                <header className={classes.header}>
+                    <img src={logo} className={classes.logo} alt="logo"/>
+                    <h1 className={classes.title}>Welcome to React</h1>
                 </header>
-                <p className={classes.join(' ')}>
+                <p className={assignedClasses.join(' ')}>
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
                 <button
