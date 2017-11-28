@@ -1,59 +1,31 @@
-.logo {
-    animation: Cockpit-logo-spin infinite 20s linear;
-    height: 80px;
-}
-
-.header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-}
-
-.title {
-    font-size: 1.5em;
-}
-
-.Cockpit-intro {
-    font-size: large;
-}
-
-@keyframes Cockpit-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .red {
     color: red;
-}
-
-.bold {
+  }
+  
+  .bold {
     font-weight: bold;
-
-}
-
-.Cockpit button {
+  }
+  
+  .Cockpit button {
     border: 1px solid blue;
     padding: 16px;
     background-color: green;
     font: inherit;
     color: white;
     cursor: pointer;
-}
-
-.Cockpit button:hover {
+  }
+  
+  .Cockpit button:hover {
     background-color: lightgreen;
     color: black;
-}
-
-.Cockpit button.Red {
+  }
+  
+  .Cockpit button.Red {
     background-color: red;
-}
-
-.Cockpit button.Red:hover {
+  }
+  
+  .Cockpit button.Red:hover {
     background-color: salmon;
-}
+    color: black;
+  }
