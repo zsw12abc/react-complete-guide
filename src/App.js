@@ -42,21 +42,9 @@ class App extends Component {
     };
 
     render() {
-        const style = {
-            backgroundColor: 'green',
-            color: "white",
-            font: 'inherit',
-            border: '1px solid blue',
-            padding: '8px',
-            cursor: 'pointer',
-            // ':hover': {
-            //     backgroundColor: "lightgreen",
-            //     color: "black"
-            // }
-        };
-
         //person switch
         let persons = null;
+        let btnClass = '';
         if (this.state.showPersons) {
             persons = (
                 <div>
@@ -71,13 +59,9 @@ class App extends Component {
                     })}
                 </div>
             );
-
-            style.backgroundColor = "red";
-            // style[':hover'] = {
-            //     backgroundColor: 'salmon',
-            //     color: 'white'
-            // }
+            btnClass = classes.Red;
         }
+
 
         const assignedClasses = [];
 
@@ -99,7 +83,7 @@ class App extends Component {
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
                 <button
-                    style={style}
+                    className={btnClass}
                     onClick={this.togglePersonHandler}>Switch Name
                 </button>
                 {persons}
